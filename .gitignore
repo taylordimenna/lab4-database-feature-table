@@ -7,3 +7,6 @@ venv/
 .DS_Store
 Thumbs.db
 .vscode/
+
+#dataset
+cohort.db
