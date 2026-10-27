@@ -9,4 +9,4 @@ Thumbs.db
 .vscode/
 
 #dataset
-cohort.db
+data/cohort.db
