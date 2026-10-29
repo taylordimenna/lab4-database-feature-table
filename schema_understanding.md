@@ -1,5 +1,5 @@
 # Schema Write-Up For Task 1
-The tables are: ```genes```, ```mutations```, ```patients```, and ```samples```.
+The four tables include: ```genes```, ```mutations```, ```patients```, and ```samples```.
 
 ## ```genes``` Table
 ### Rows
@@ -92,6 +92,7 @@ For the ```samples``` table, the columns are: ```sample_id```, ```patient_id```,
 ### Grain
 Each row represents one sample and its associated measurements. Each row is linked to a patient.
 
-
-- Describe how the tables relate (one-to-many, one-to-one) in your own words, or with a simple diagram, based on what you checked in the database, not guessed from the column names
 ## Relatedness of Each Table
+There are some tables that can be associated with multiple records of another table. For example, one patient could have multiple samples, or one sample could have multiple mutations, etc. Additionally, even though there are 566 rows within the sample and patients tables, it doesn't necessarily mean that there is one sample record per patient record. It's possible, however I couldn't confirm this through my initial database inspection.
+
+The foreign keys also establish some connections between the tables. ```samples.patient_id``` must correspond to ```patients.patient_id``` connecting the sample records to patient records, ```mutations.sample_id``` must correspond to ```samples.sample_id``` connecting mutation records to samples, and ```mutations.gene_symbol``` must correspond to ```genes.gene_symbol``` connecting mutation records to genes. These will eventually allow SQL queries to join and build the combined feature table with only 566 rows.
