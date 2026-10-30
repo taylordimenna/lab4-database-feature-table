@@ -52,3 +52,6 @@ ORDER BY
 
 
 -- Query 2: Count arients per tissue course sit per tumor stage
+-- Expected grain = one row per patient per gene
+-- Expected row count = 2830 (566 patients, 5 genes per patient)
+
