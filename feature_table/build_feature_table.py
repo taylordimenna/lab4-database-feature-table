@@ -89,7 +89,7 @@ feature_table.to_csv(
 )
 
 # Report validation results
-print("Feature table successfully created!")
+print("Table created")
 print("Output:", output_path)
 print("Rows:", len(feature_table))
 print("Columns:", len(feature_table.columns))

@@ -28,4 +28,4 @@ print()
 for row in results[:15]:
     print(row)
 if len(results) > 15:
-    print("...showing first 15 rows only")
+    print("first 15 rows")
