@@ -9,4 +9,4 @@ Thumbs.db
 .vscode/
 
 #dataset
-data/cohort.db
+data/raw/lab4-cbioportal-luad/cohort.db

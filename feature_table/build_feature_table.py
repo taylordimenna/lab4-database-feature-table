@@ -4,7 +4,7 @@ import pandas as pd
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_IN = (PROJECT_ROOT / "data" / "cohort.db")
+DATA_IN = (PROJECT_ROOT / "data" / "raw" / "lab4-cbioportal-luad" / "cohort.db")
 SQL_PATH = (PROJECT_ROOT / "sql_queries")
 TABLE_OUT = (PROJECT_ROOT / "feature_table")
 

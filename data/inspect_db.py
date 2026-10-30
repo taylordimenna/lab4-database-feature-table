@@ -3,7 +3,7 @@ import sqlite3
 
 #Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_IN = (PROJECT_ROOT / "data" / "cohort.db")
+DATA_IN = (PROJECT_ROOT / "data" / "raw" / "lab4-cbioportal-luad" / "cohort.db")
 
 if not DATA_IN.exists():
     raise FileNotFoundError(f"Database not found: {DATA_IN}")
