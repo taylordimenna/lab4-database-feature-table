@@ -4,7 +4,7 @@ import sqlite3
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_IN = (PROJECT_ROOT / "data" / "cohort.db")
-SQL_PATH = (PROJECT_ROOT / "sql_queries" / "query_2.sql")
+SQL_PATH = (PROJECT_ROOT / "sql_queries" / "query_3.sql")
 
 # Make sure that the files can be found/exist
 if not DATA_IN.exists():
@@ -29,8 +29,3 @@ for row in results[:15]:
     print(row)
 if len(results) > 15:
     print("...showing first 15 rows only")
-print()
-print("Number of site-stage groups:", len(results))
-
-
-
