@@ -7,6 +7,3 @@ venv/
 .DS_Store
 Thumbs.db
 .vscode/
-
-#dataset
-data/raw/lab4-cbioportal-luad/cohort.db

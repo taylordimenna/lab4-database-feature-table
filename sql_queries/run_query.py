@@ -3,7 +3,7 @@ import sqlite3
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_IN = (PROJECT_ROOT / "data" / "raw" / "lab4-cbioportal-luad" / "cohort.db")
+DATA_IN = (PROJECT_ROOT / "data" / "cohort.db")
 SQL_PATH = (PROJECT_ROOT / "sql_queries" / "query_2.sql")
 
 # Make sure that the files can be found/exist
