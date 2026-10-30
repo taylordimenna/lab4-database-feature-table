@@ -1,0 +1,12 @@
+column_name,meaning,units,source_table,missing_value_handing
+patient_id,identifier for the patient,None,patients,No missing values
+sex,patient's recorded sex,None,patients,Retained as NA
+age_at_diagnosis,patient's age at diagnosis,Years,patients,Retained as NA
+stage,recorded cancer stage,None,samples,Retained as NA
+tissue_source_site,site where the tissue was sourced from,None,samples,No missing values
+tmb_nonsynonymous,recorded tumor mutation burden measure (total number of mutations found in cancer cells,Mutations per megabase,mutations,No missing values
+EGFR,number of protein-altering EGFR mutations in the patient,Mutation count (0 represents no mutations),mutations,No missing values
+KEAP1,number of protein-altering KEAP1 mutations in the patient,Mutation count (0 represents no mutations),mutations,No missing values
+KRAS,number of protein-altering KRAS mutations in the patient,Mutation count (0 represents no mutations),mutations,No missing values
+STK11,number of protein-altering STK11 mutations in the patient,Mutation count (0 represents no mutations),mutations,No missing values
+TP53,number of protein-altering TP53 mutations in the patient,Mutation count (0 represents no mutations),mutations,No missing values
